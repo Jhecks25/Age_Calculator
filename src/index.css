@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 86%);
+}
+.logo {
+  position: relative;
+  width: 7vw;
+  left: 700px;
+  bottom: 125px;
+  background-color: hsl(259, 100%, 65%);
+  border: 1px solid hsl(259, 100%, 65%);
+  border-radius: 50%;
+}
+
+main,
+.inputButtons,
+.displayInfo {
+  background-color: hsl(0, 0%, 100%);
+}
+
+main {
+  width: 60vw;
+  margin: 2em auto;
+  border: 1px solid hsl(0, 0%, 94%);
+  border-radius: 20px 20px 150px 20px;
+}
+
+.inputButtons,
+hr {
+  width: 50vw;
+  margin: 5em auto;
+}
+
+.inputButtons,
+.displayInfo {
+  display: flex;
+  /* margin: 5em auto; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inputButtons {
+  /* width: 50vw; */
+  height: 20vh;
+}
+
+.inputButtons label {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inputButtons input {
+  width: 13vw;
+  height: 10vh;
+  font-size: 2rem;
+  font-family: "Poppins";
+  font-weight: 700;
+  border-radius: 5px;
+  text-align: center;
+}
+.inputButtons input::placeholder {
+  position: relative;
+  top: 3px;
+  left: 1px;
+  bottom: 3px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.p-color,
+.p-color-1,
+.label-color-1 {
+  color: hsl(0, 100%, 67%);
+}
+.p-color-1 {
+  font-family: sans-serif, "Poppins";
+  font-weight: 400i;
+}
+.p-color,
+.p-color-1,
+.label-color,
+.label-color-1 {
+  font-size: 1rem;
+}
+
+.label-color,
+.label-color-1 {
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.displayInfo {
+  position: relative;
+  top: -80px;
+  width: 50vw;
+  height: 40vh;
+}
+
+.displayInfo > ul > li {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin-right: 80px;
+  font-style: italic;
+  list-style-type: none;
+}
+
+.span-colored span {
+  color: hsl(259, 100%, 65%);
+}
+
+@media screen and (max-width: 1293px) {
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 90vw;
+    min-height: 60vh;
+  }
+
+  .inputButtons,
+  hr {
+    width: 80vw;
+  }
+  .logo {
+    position: relative;
+    width: 20vw;
+    left: 40%;
+    top: 60%;
+  }
+
+  .inputButtons {
+    align-items: center;
+  }
+  .inputButtons input {
+    width: 25vw;
+  }
+  .p-color,
+  .p-color-1,
+  .label-color,
+  .label-color-1 {
+    font-size: 2rem;
+  }
+
+  .displayInfo {
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 90vw;
+    top: -100px;
+  }
+
+  .displayInfo > ul > li {
+    width: 80vw;
+    margin: 10px;
+    font-size: 3.5rem;
+  }
+}
