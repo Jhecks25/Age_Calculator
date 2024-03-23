@@ -117,11 +117,67 @@ hr {
   color: hsl(259, 100%, 65%);
 }
 
-@media screen and (max-width: 1293px) {
+@media screen and (min-width: 367px) {
   main {
     display: flex;
     flex-flow: row wrap;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  .inputButtons,
+  hr {
+    width: 80vw;
+  }
+  .inputButtons input {
+    margin: 10px;
+  }
+  .logo {
+    position: relative;
+    width: 20vw;
+    left: 40%;
+    top: 60%;
+  }
+
+  .inputButtons {
+    align-items: center;
+  }
+  .inputButtons input {
+    width: 25vw;
+  }
+
+  .p-color,
+  .p-color-1,
+  .label-color,
+  .label-color-1 {
+    font-size: 1rem;
+    margin-left: 1em;
+  }
+
+  .displayInfo {
+    display: flex;
+    flex-flow: row wrap;
     min-width: 90vw;
+    top: -100px;
+  }
+
+  .displayInfo > ul > li {
+    width: 80vw;
+    margin: 10px;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  main {
+    min-width: 100vw;
+    min-height: 60vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    min-width: 100vw;
     min-height: 60vh;
   }
 
@@ -143,12 +199,6 @@ hr {
     width: 25vw;
   }
   .p-color,
-  .p-color-1,
-  .label-color,
-  .label-color-1 {
-    font-size: 2rem;
-  }
-
   .displayInfo {
     display: flex;
     flex-flow: row wrap;
