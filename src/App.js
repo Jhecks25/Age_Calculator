@@ -125,7 +125,7 @@ function InputAge({ onAddinfo }) {
         ></input>
         {myArr(2, msg)}
       </label>
-      <button>buton</button>
+      <button></button>
     </form>
   );
 }
