@@ -139,7 +139,7 @@ hr {
     position: relative;
     width: 20vw;
     left: 40%;
-    top: 60%;
+    top: 65%;
   }
 
   .inputButtons {
@@ -180,7 +180,26 @@ hr {
   .logo {
     position: relative;
     width: 15vw;
-    left: 500px;
+    left: 630px;
     top: 60%;
+  }
+  .inputButtons,
+  hr {
+    width: 60vw;
+  }
+  .inputButtons input {
+    margin: 0;
+  }
+  .displayInfo {
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 100vw;
+    top: -100px;
+  }
+
+  .displayInfo > ul > li {
+    width: 60vw;
+    margin: 10px;
+    font-size: 4rem;
   }
 }
