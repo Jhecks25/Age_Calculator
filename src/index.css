@@ -65,6 +65,9 @@ hr {
   border-radius: 5px;
   text-align: center;
 }
+.inputButtons button {
+  display: none;
+}
 .inputButtons input::placeholder {
   position: relative;
   top: 3px;
@@ -117,7 +120,7 @@ hr {
   color: hsl(259, 100%, 65%);
 }
 
-@media screen and (min-width: 367px) {
+@media screen and (min-width: 367px) and (max-width: 767px) {
   main {
     display: flex;
     flex-flow: row wrap;
@@ -168,47 +171,16 @@ hr {
   }
 }
 
-@media screen and (min-width: 767px) {
-  main {
-    min-width: 100vw;
-    min-height: 60vh;
-  }
-}
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   main {
     min-width: 100vw;
     min-height: 60vh;
   }
 
-  .inputButtons,
-  hr {
-    width: 80vw;
-  }
   .logo {
     position: relative;
-    width: 20vw;
-    left: 40%;
+    width: 15vw;
+    left: 500px;
     top: 60%;
-  }
-
-  .inputButtons {
-    align-items: center;
-  }
-  .inputButtons input {
-    width: 25vw;
-  }
-  .p-color,
-  .displayInfo {
-    display: flex;
-    flex-flow: row wrap;
-    min-width: 90vw;
-    top: -100px;
-  }
-
-  .displayInfo > ul > li {
-    width: 80vw;
-    margin: 10px;
-    font-size: 3.5rem;
   }
 }
