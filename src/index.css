@@ -66,7 +66,7 @@ hr {
   text-align: center;
 }
 .inputButtons button {
-  display: none;
+  opacity: 0;
 }
 .inputButtons input::placeholder {
   position: relative;
