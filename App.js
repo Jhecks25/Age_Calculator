@@ -11,7 +11,6 @@ function App() {
   return (
     <main>
       <InputAge onAddinfo={handleGetDisplayInfo} />
-      <hr />
       <DisplayInfo getDisplayInfo={getDisplayInfo} />
     </main>
   );
@@ -133,6 +132,7 @@ function InputAge({ onAddinfo }) {
 function DisplayInfo({ getDisplayInfo }) {
   return (
     <>
+      <hr />
       <img className="logo" src={logo} alt="" />
 
       <div className="displayInfo">

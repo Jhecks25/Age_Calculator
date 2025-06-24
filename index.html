@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,300;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <main>
+  
+      <form class="inputButtons">
+      <label>
+        day
+          <input type="text" class="day" name="day" placeholder="dd"></input>
+      
+            <span class="errormessage"></span>
+      </label>
+      <label>
+        month
+        <input type="text" class="month" name="month" placeholder="mm"></input>
+      
+            <span class="errormessage"></span>
+      </label>
+      <label>
+        year
+        <input type="text" class="year" name="year" placeholder="yyyy"></input>
+      
+            <span class="errormessage"></span>
+      </label>
+  
+    </form>
+    <hr />
+    <img class="logo arrow-icon" src="assets/icon-arrow.svg" alt="" />
+    <div class="displayInfo">
+      <ul class="span-colored">
+        <li class="displayinfo"><span>- -</span> years</li>
+        <li class="displayinfo"><span>- -</span> months</li>
+        <li class="displayinfo"><span>- -</span> days</li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="age.js"></script>
+  </body>
+</html>
